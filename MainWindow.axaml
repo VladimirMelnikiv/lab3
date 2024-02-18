@@ -1,0 +1,40 @@
+<Window x:Class="lab3.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calculator"
+        MinWidth="300"
+        MinHeight="200">
+    <Grid ColumnDefinitions="*,*,*,*,*"
+          RowDefinitions="*,*,*,*,*,*,*">
+        <TextBox Name="Display" Grid.ColumnSpan="5" TextAlignment="Right" FontSize="20" />
+        <Button Grid.Row="1" Content="1" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="2" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="3" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="+" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="1" Grid.Column="4" Content="mod" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="2" Content="4" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="5" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="6" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="-" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="2" Grid.Column="4" Content="n!" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="3" Content="7" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="8" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="9" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="*" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="x^y" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="0" Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="C" Click="ClearClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="/" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="4" Grid.Column="4" Content="lg" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="5" Grid.Column="4" Content="ln" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="5" Grid.Column="0" Content="sin" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="cos" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="tan" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="6" Grid.Column="1" Content="floor" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="6" Grid.Column="0" Content="ceil" Click="OperatorClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="." Click="NumberClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="=" Click="EqualsClicka" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Row="6" Grid.Column="2" Content="⌫" Click="BackspaceClick" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+    </Grid>
+</Window>
